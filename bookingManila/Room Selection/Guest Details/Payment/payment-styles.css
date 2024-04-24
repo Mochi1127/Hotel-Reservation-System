@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+.navbar {
+    display: flex;
+    column-gap: 67rem;
+    box-shadow: 0 -3px 10px 2px;
+}
+
+.logo {
+    padding: 1rem;
+}
+
+.citrus {
+    color: #96C93D;
+    font-size: 2rem;
+}
+
+.hotel {
+    color: #96C93D;
+    font-size: 1rem;
+}
+
+.navs  {
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+.home {
+    color: #96C93D;
+}
+
+.contact-us {
+    color: #3f3f3f;
+}
+
+.booking-status {
+    color: #3f3f3f;
+}
+
+.status {
+    display: flex;
+    justify-content: space-around;
+    padding: .3rem;
+    margin-top: 1.5rem;
+    background-color: #ebebeb;
+    border-radius: 7px;
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.room-selection {
+    background-color: #ebebeb;
+    border-radius: 7px;
+    width: 20rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.room-selection p {
+    margin-top: .5rem;
+    color: #5e7c29;
+}
+
+.guest-details {
+    background-color: #ebebeb;
+    border-radius: 7px;
+    width: 20rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.guest-details p {
+    margin-top: .5rem;
+    color: #5e7c29;
+}
+
+.payment {
+    background-color: #96C93D;
+    border-radius: 7px;
+    width: 20rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.payment p {
+    margin-top: .5rem;
+    color: #5e7c29;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: .3rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.text1 .txt1 {
+    color: #3f3f3f;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text1 .txt2 {
+    color: #3f3f3f;
+    font-size: .8rem;
+}
+
+.guest-info {
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    width: 60%;
+    background-color: #ebebeb;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+}
+
+.guest-info-top {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    color: #3f3f3f;
+    font-weight: bold;
+}
+
+.guest-info-top .email{
+    margin-left: 11rem;
+}
+
+.guest-info-top .number{
+    margin-left: 11rem;
+}
+
+.guest-info-bottom {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-top: -1rem;
+    color: #3f3f3f;
+    font-weight: bold;
+}
+
+.guest-info-bottom .people {
+    margin-left: 6.6rem;
+}
+
+.guest-info-bottom .rooms {
+    margin-left: 13rem;
+}
+
+.pay-button {
+    background-color: #ebebeb;
+    border-radius: 10px;
+    height: 5rem;
+    width: 30%;
+    float: right;
+    margin-right: 4rem;
+    margin-top: -5rem;
+}
+
+.pay-button button {
+    width: 28rem;
+    height: 3rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+    border: 1px solid #96C93D;
+    background-color: #96C93D;
+    color: #5e7c29;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.pay-button button:hover {
+    cursor: pointer;
+}
+
+.room-info {
+    width: 60%;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+}
+
+.room-info .rname {
+    color: #3f3f3f;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.room-info .rooms {
+    color: #3f3f3f;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.room-info .price {
+    color: #3f3f3f;
+    font-size: 1.1rem;
+    font-weight: bold;
+    float: right;
+    margin-top: -1rem;
+}
+
+.room-info .line {
+    background-color: #3f3f3f4d;
+    width: 90%;
+    height: 2px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
+}
+
+.room-info .left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: #3f3f3f;
+}
+
+.room-info .right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    color: #3f3f3f;
+    float: right;
+    margin-top: -6rem;
+    margin-right: 1rem;
+    text-align: right;
+}
+
+.room-info .whitebox {
+    background-color: #f0f0f0;
+    height: 9rem;
+    margin-top: -8rem;
+    border-radius: 10px;
+}

@@ -1,0 +1,350 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 65px;
+    border-bottom: solid .2px;
+    border-color: rgba(0, 0, 0, 0.322);
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 1px 3px -1px grey;
+}
+
+.logo .citrus {
+    color: #96C93D;
+    text-align: center;
+    font-size: 40px;
+}
+
+.logo .hotels {
+    color: #96C93D;
+    text-align: center;
+    font-size: 13px;
+    margin-top: -35px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+.nav a:hover {
+    text-decoration: none;
+}
+
+.nav button {
+    background-color: rgb(228, 227, 227);
+    color: #96C93D;
+    border: 1px solid #96C93D;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.nav button:hover {
+    background-color: #96C93D;
+    color: rgb(228, 227, 227);
+}
+
+.bigpic {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.bigpic img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    margin-top: 22px;
+}
+
+.bigpic .greenbox1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    margin-top: 22px;
+    background-color: #96c93d2c;
+}
+
+.bigpic .greenbox2 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #96c93dbd;
+}
+
+.bigpic .text1 {
+    position: absolute;
+    top: 48.5%;
+    left: 33%;
+    color: rgb(221, 221, 221);
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px 25px;
+}
+
+.texts .text1 {
+    font-size: 27px;
+    width: 500px;
+    color: rgb(37, 37, 37);
+}
+
+.texts .text2 {
+    font-size: 14px;
+    margin-left: 150px;
+    color: rgb(51, 51, 51);
+}
+
+.images1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.images1 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 792px;
+}
+
+.images1 .greenbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 792px;
+    background-color: #96c93d2c;
+}
+
+.images1 .whitebox1 {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    height: 650px;
+    width: 650px;
+    border: 2px solid rgba(189, 189, 189, 0.8);
+}
+
+.images1 .whitebox2 {
+    position: absolute;
+    top: 70px;
+    left: 855px;
+    height: 650px;
+    width: 650px;
+    border: 2px solid rgba(189, 189, 189, 0.8);
+}
+
+.images1 .text1 {
+    position: absolute;
+    top: 394px;
+    left: 260px;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.images1 .text2 {
+    position: absolute;
+    top: 394px;
+    left: 980px;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.images2 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -3px;
+}
+
+.images2 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 527px;
+    width: 100%;
+}
+
+.images2 .greenbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 527px;
+    width: 100%;
+    background-color: #96c93d2c;
+}
+
+.images2 .whitebox1 {
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    height: 450px;
+    width: 450px;
+    border: 2px solid rgba(189, 189, 189, 0.8);
+}
+
+.images2 .whitebox2 {
+    position: absolute;
+    top: 30px;
+    left: 566px;
+    height: 450px;
+    width: 450px;
+    border: 2px solid rgba(189, 189, 189, 0.8);
+}
+
+.images2 .whitebox3 {
+    position: absolute;
+    top: 30px;
+    left: 1091px;
+    height: 450px;
+    width: 450px;
+    border: 2px solid rgba(189, 189, 189, 0.8);
+}
+
+.images2 .text1 {
+    position: absolute;
+    top: 263px;
+    left: 110px;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.images2 .text2 {
+    position: absolute;
+    top: 263px;
+    left: 700px;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.images2 .text3 {
+    position: absolute;
+    top: 263px;
+    left: 1225px;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.images3 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 700px;
+    width: 100%;
+    background-color: #96C93D;
+    margin-top: -3px;
+}
+
+.images3 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 529px;
+    width: 100%;
+}
+
+.images3 .greenbox{
+    position: absolute;
+    top: 0;
+    left: 525px;
+    height: 529px;
+    width: 1058px;
+    background-color: #96c93d2c;
+}
+
+.images3 .whitebox1 {
+    position: absolute;
+    top: 30px;
+    left: 566px;
+    height: 450px;
+    width: 450px;
+    border: 2px solid rgba(189, 189, 189, 0.8);
+}
+
+.images3 .whitebox2 {
+    position: absolute;
+    top: 30px;
+    left: 1091px;
+    height: 450px;
+    width: 450px;
+    border: 2px solid rgba(189, 189, 189, 0.8);
+}
+
+.images3 .quote {
+    color: white;
+    width: 526px;
+    text-align: center;
+}
+
+.images3 p {
+    margin: 100px 15px;
+}
+
+.images3 .text1 {
+    position: absolute;
+    top: 150px;
+    left: 650px;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.images3 .text2 {
+    position: absolute;
+    top: 150px;
+    left: 1150px;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}

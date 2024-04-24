@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guest-details-styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <p class="citrus">CITRUS</p>
+            <p class="hotel">Hotel Manila</p>
+        </div>
+        <div class="navs">
+            <p class="home">Home</p>
+            <p class="contact-us">Contac Us</p>
+            <p class="booking-status">Booking Status</p>
+        </div>
+    </div>
+
+    <div class="status">
+        <div class="room-selection"><p>Room Selection</p></div>
+        <div class="guest-details"><p>Guest Details</p></div>
+        <div class="payment"><p>Payment</p></div>
+    </div>
+
+    <div class="text1">
+        <p class="txt1">Guest Details</p>
+        <p class="txt2">Fill in the following details to proceed to payment</p>
+    </div>
+
+    <form class="guest-form" action="">
+        <div class="guest-form-layer1">
+            <div class="guest-form-layer1-fname">
+                <input type="text" id="first-name" placeholder="Enter your first name">
+                <div class="fname-label">First Name*</div>
+            </div>
+            <div class="guest-form-layer1-lname">
+                <input type="text" id="last-name" placeholder="Enter your last name">
+                <div class="lname-label">Last Name*</div>
+            </div>
+            <div class="guest-form-layer1-sex">
+                <select id="sex">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+                <div class="label-name">Sex</div>
+            </div>           
+        </div>
+
+        <div class="guest-form-layer2">
+            <div class="guest-form-layer2-no">
+                <input type="text" id="mobile-no" placeholder="Enter your mobile number">
+                <div class="label-name">Mobile Number*</div>
+            </div>
+            <div class="guest-form-layer2-email">
+                <input type="text" id="e-mail" placeholder="Enter your e-mail address">
+                <div class="label-name">E-mail</div>
+            </div>
+            <div class="guest-form-layer2-bday">
+                <input type="date" id="b-day" placeholder="Enter your date of birth">
+                <div class="label-name">Date of Birth</div>
+            </div>
+        </div>
+
+        <div class="guest-form-layer3">
+            <input type="text" id="address" placeholder="Enter your address">
+            <div class="label-name">Address</div>
+        </div>
+
+        <div class="guest-form-layer4">
+            <textarea id="message" placeholder="Message"></textarea>
+        </div>
+    </form>
+
+    <a href="Payment/payment.html"><button class="proceed">PROCEED</button></a>
+</body>
+</html>

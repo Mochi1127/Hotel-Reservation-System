@@ -1,0 +1,957 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 65px;
+    border-bottom: solid .2px;
+    border-color: rgba(0, 0, 0, 0.322);
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 1px 3px -1px grey;
+}
+
+.logo .citrus {
+    color: #96C93D;
+    text-align: center;
+    font-size: 40px;
+}
+
+.logo .hotels {
+    color: #96C93D;
+    text-align: center;
+    font-size: 13px;
+    margin-top: -35px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+.nav a:hover {
+    text-decoration: none;
+}
+
+.nav button {
+    background-color: rgb(228, 227, 227);
+    color: #96C93D;
+    border: 1px solid #96C93D;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.nav button:hover {
+    background-color: #96C93D;
+    color: #e4e3e3;
+}
+
+.bigpic {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.bigpic img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    margin-top: 22px;
+}
+
+.bigpic .greenbox1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    margin-top: 22px;
+    background-color: #96c93d2c;
+}
+
+.bigpic .greenbox2 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #96c93dbd;
+}
+
+.bigpic .text1 {
+    position: absolute;
+    top: 48.5%;
+    left: 33%;
+    color: rgb(221, 221, 221);
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.resortInfo {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    background-color: #9DBD63;
+    color: #e4e3e3;
+    width: 100%;
+    height: 100px;
+    row-gap: 20px;
+    column-gap: 200px;
+    justify-content: center;
+    margin-top: -3px;
+}
+
+.resortInfo .item1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.resortInfo .item2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    font-size: 15px;
+    margin-top: -30px;
+    margin-left: 20px;
+}
+
+.resortInfo .item3 {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    font-size: 14px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.standard-twin {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    background-color: #e4e3e3;
+    color: #3f3f3f;
+    padding: 2rem;
+}
+
+.standard-twin-room-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    row-gap: 70px;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.standard-twin-room-name {
+    font-size: 25px;
+}
+
+.standard-twin-room-desc {
+    font-size: 15px;
+    color: #4e4a4a;
+    opacity: 75%;
+    font-weight: 50;
+}
+
+.standard-twin-room-info button {
+    color: #4e4a4a;
+    opacity: 80%;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #FFDB00;
+    transition-duration: 0.4s;
+}
+
+.standard-twin-room-info button:hover {
+    color: #3f3f3f;
+    background-color: #FFDB00;
+    cursor: pointer;
+}
+
+.standard-twin-slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.standard-twin-slider {
+    display: flex;
+    width: 60rem;
+    height: 30rem;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.standard-twin-slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.standard-twin-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 64rem;
+    bottom: -49rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.standard-twin-slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+
+.standard-twin-slider-nav a:hover {
+    opacity: 100%;
+}
+
+.deluxe-twin {
+    display: flex;
+    flex-direction: row;
+    column-gap: 13rem;
+    background-color: #e4e3e3;
+    color: #3f3f3f;
+}
+
+.deluxe-twin-room-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    row-gap: 70px;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.deluxe-twin-room-name {
+    font-size: 25px;
+}
+
+.deluxe-twin-room-desc {
+    font-size: 15px;
+    color: #4e4a4a;
+    opacity: 75%;
+    font-weight: 50;
+}
+
+.deluxe-twin-room-info button {
+    color: #4e4a4a;
+    opacity: 80%;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #FFDB00;
+    transition-duration: 0.4s;
+}
+
+.deluxe-twin-room-info button:hover {
+    color: #3f3f3f;
+    background-color: #FFDB00;
+    cursor: pointer;
+}
+
+.deluxe-twin-slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 4rem 0;
+}
+
+.deluxe-twin-slider {
+    display: flex;
+    width: 60rem;
+    height: 30rem;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.deluxe-twin-slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.deluxe-twin-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 31rem;
+    top: 28rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.deluxe-twin-slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+
+.deluxe-twin-slider-nav a:hover {
+    opacity: 100%;
+}
+
+.family-quad {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    background-color: #e4e3e3;
+    color: #3f3f3f;
+    padding: 2rem;
+}
+
+.family-quad-room-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    row-gap: 70px;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.family-quad-room-name {
+    font-size: 25px;
+}
+
+.family-quad-room-desc {
+    font-size: 15px;
+    color: #4e4a4a;
+    opacity: 75%;
+    font-weight: 50;
+}
+
+.family-quad-room-info button {
+    color: #4e4a4a;
+    opacity: 80%;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #FFDB00;
+    transition-duration: 0.4s;
+}
+
+.family-quad-room-info button:hover {
+    color: #3f3f3f;
+    background-color: #FFDB00;
+    cursor: pointer;
+}
+
+.family-quad-slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.family-quad-slider {
+    display: flex;
+    width: 60rem;
+    height: 30rem;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.family-quad-slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.family-quad-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 64rem;
+    top: 161rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.family-quad-slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+
+.family-quad-slider-nav a:hover {
+    opacity: 100%;
+}
+
+.executive-king {
+    display: flex;
+    flex-direction: row;
+    column-gap: 13rem;
+    background-color: #e4e3e3;
+    color: #3f3f3f;
+}
+
+.executive-king-room-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    row-gap: 70px;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.executive-king-room-name {
+    font-size: 25px;
+}
+
+.executive-king-room-desc {
+    font-size: 15px;
+    color: #4e4a4a;
+    opacity: 75%;
+    font-weight: 50;
+}
+
+.executive-king-room-info button {
+    color: #4e4a4a;
+    opacity: 80%;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #FFDB00;
+    transition-duration: 0.4s;
+}
+
+.executive-king-room-info button:hover {
+    color: #3f3f3f;
+    background-color: #FFDB00;
+    cursor: pointer;
+}
+
+.executive-king-slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 4rem 0;
+}
+
+.executive-king-slider {
+    display: flex;
+    width: 60rem;
+    height: 30rem;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.executive-king-slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.executive-king-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 31rem;
+    top: 28rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.executive-king-slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+
+.executive-king-slider-nav a:hover {
+    opacity: 100%;
+}
+
+.junior-suite {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    background-color: #e4e3e3;
+    color: #3f3f3f;
+    padding: 2rem;
+}
+
+.junior-suite-room-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    row-gap: 70px;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.junior-suite-room-name {
+    font-size: 25px;
+}
+
+.junior-suite-room-desc {
+    font-size: 15px;
+    color: #4e4a4a;
+    opacity: 75%;
+    font-weight: 50;
+}
+
+.junior-suite-room-info button {
+    color: #4e4a4a;
+    opacity: 80%;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #FFDB00;
+    transition-duration: 0.4s;
+}
+
+.junior-suite-room-info button:hover {
+    color: #3f3f3f;
+    background-color: #FFDB00;
+    cursor: pointer;
+}
+
+.junior-suite-slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.junior-suite-slider {
+    display: flex;
+    width: 60rem;
+    height: 30rem;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.junior-suite-slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.junior-suite-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 64rem;
+    top: 225rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.junior-suite-slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+
+.junior-suite-slider-nav a:hover {
+    opacity: 100%;
+}
+
+.premier-king {
+    display: flex;
+    flex-direction: row;
+    column-gap: 13rem;
+    background-color: #e4e3e3;
+    color: #3f3f3f;
+}
+
+.premier-king-room-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    row-gap: 70px;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.premier-king-room-name {
+    font-size: 25px;
+}
+
+.premier-king-room-desc {
+    font-size: 15px;
+    color: #4e4a4a;
+    opacity: 75%;
+    font-weight: 50;
+}
+
+.premier-king-room-info button {
+    color: #4e4a4a;
+    opacity: 80%;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #FFDB00;
+    transition-duration: 0.4s;
+}
+
+.premier-king-room-info button:hover {
+    color: #3f3f3f;
+    background-color: #FFDB00;
+    cursor: pointer;
+}
+
+.premier-king-slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 4rem 0;
+}
+
+.premier-king-slider {
+    display: flex;
+    width: 60rem;
+    height: 30rem;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.premier-king-slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.premier-king-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 31rem;
+    top: 28rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.premier-king-slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+
+.premier-king-slider-nav a:hover {
+    opacity: 100%;
+}
+
+.premier-king-pool {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    background-color: #e4e3e3;
+    color: #3f3f3f;
+    padding: 2rem;
+}
+
+.premier-king-pool-room-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    row-gap: 70px;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.premier-king-pool-room-name {
+    font-size: 25px;
+}
+
+.premier-king-pool-room-desc {
+    font-size: 15px;
+    color: #4e4a4a;
+    opacity: 75%;
+    font-weight: 50;
+}
+
+.premier-king-pool-room-info button {
+    color: #4e4a4a;
+    opacity: 80%;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #FFDB00;
+    transition-duration: 0.4s;
+}
+
+.premier-king-pool-room-info button:hover {
+    color: #3f3f3f;
+    background-color: #FFDB00;
+    cursor: pointer;
+}
+
+.premier-king-pool-slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.premier-king-pool-slider {
+    display: flex;
+    width: 60rem;
+    height: 30rem;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.premier-king-pool-slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.premier-king-pool-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 64rem;
+    top: 289rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.premier-king-pool-slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+
+.premier-king-pool-slider-nav a:hover {
+    opacity: 100%;
+}
+
+.sky-suite {
+    display: flex;
+    flex-direction: row;
+    column-gap: 13rem;
+    background-color: #e4e3e3;
+    color: #3f3f3f;
+}
+
+.sky-suite-room-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    row-gap: 70px;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.sky-suite-room-name {
+    font-size: 25px;
+}
+
+.sky-suite-room-desc {
+    font-size: 15px;
+    color: #4e4a4a;
+    opacity: 75%;
+    font-weight: 50;
+}
+
+.sky-suite-room-info button {
+    color: #4e4a4a;
+    opacity: 80%;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #FFDB00;
+    transition-duration: 0.4s;
+}
+
+.sky-suite-room-info button:hover {
+    color: #3f3f3f;
+    background-color: #FFDB00;
+    cursor: pointer;
+}
+
+.sky-suite-slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 4rem 0;
+}
+
+.sky-suite-slider {
+    display: flex;
+    width: 60rem;
+    height: 30rem;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.sky-suite-slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.sky-suite-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 31rem;
+    top: 28rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.sky-suite-slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+
+.sky-suite-slider-nav a:hover {
+    opacity: 100%;
+}
+
+.sky-villa {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    background-color: #e4e3e3;
+    color: #3f3f3f;
+    padding: 2rem;
+}
+
+.sky-villa-room-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    row-gap: 70px;
+    width: 25rem;
+    flex-shrink: 0;
+}
+
+.sky-villa-room-name {
+    font-size: 25px;
+}
+
+.sky-villa-room-desc {
+    font-size: 15px;
+    color: #4e4a4a;
+    opacity: 75%;
+    font-weight: 50;
+}
+
+.sky-villa-room-info button {
+    color: #4e4a4a;
+    opacity: 80%;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #FFDB00;
+    transition-duration: 0.4s;
+}
+
+.sky-villa-room-info button:hover {
+    color: #3f3f3f;
+    background-color: #FFDB00;
+    cursor: pointer;
+}
+
+.sky-villa-slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.sky-villa-slider {
+    display: flex;
+    width: 60rem;
+    height: 30rem;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.sky-villa-slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.sky-villa-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 64rem;
+    top: 353rem;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.sky-villa-slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+
+.sky-villa-slider-nav a:hover {
+    opacity: 100%;
+}
